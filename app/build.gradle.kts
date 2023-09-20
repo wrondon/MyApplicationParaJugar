@@ -53,8 +53,8 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.7.2")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("androidx.compose.ui:ui")
@@ -69,25 +69,25 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    implementation("com.google.dagger:hilt-android:2.47")
+    implementation("com.google.dagger:hilt-android:2.48")
     ksp("com.google.dagger:hilt-android-compiler:2.47")
     implementation( "androidx.hilt:hilt-navigation-compose:1.0.0")
 
 
-    implementation( "androidx.navigation:navigation-fragment-ktx:2.7.1")
-    implementation( "androidx.navigation:navigation-ui-ktx:2.7.1")
+    implementation( "androidx.navigation:navigation-fragment-ktx:2.7.2")
+    implementation( "androidx.navigation:navigation-ui-ktx:2.7.2")
 
     // Feature module Support
-    implementation( "androidx.navigation:navigation-dynamic-features-fragment:2.7.1")
+    implementation( "androidx.navigation:navigation-dynamic-features-fragment:2.7.2")
 
     // Testing Navigation
-    androidTestImplementation ("androidx.navigation:navigation-testing:2.7.1")
+    androidTestImplementation ("androidx.navigation:navigation-testing:2.7.2")
 
     // Jetpack Compose Integration
-    implementation( "androidx.navigation:navigation-compose:2.7.1")
+    implementation( "androidx.navigation:navigation-compose:2.7.2")
 
     ///// Navigation DSL
-    api ("androidx.navigation:navigation-fragment-ktx:2.7.1")
+    api ("androidx.navigation:navigation-fragment-ktx:2.7.2")
 
 
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
@@ -120,7 +120,7 @@ dependencies {
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:2.5.2")
 
-    val lifecycle_version = "2.6.1"
+    val lifecycle_version = "2.6.2"
     val arch_version = "2.2.0"
 
     // ViewModel
@@ -175,12 +175,12 @@ dependencies {
     // Optional - Integration with activities
     implementation("androidx.activity:activity-compose:1.7.2")
     // Optional - Integration with ViewModels
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     // Optional - Integration with LiveData
     implementation("androidx.compose.runtime:runtime-livedata")
 
 
-    val paging_version = "3.2.0"
+    val paging_version = "3.2.1"
 
     implementation("androidx.paging:paging-runtime-ktx:$paging_version")
 
@@ -197,7 +197,7 @@ dependencies {
     implementation("androidx.paging:paging-guava:$paging_version")
 
     // optional - Jetpack Compose integration
-    implementation("androidx.paging:paging-compose:3.2.0")
+    implementation("androidx.paging:paging-compose:3.2.1")
 
 
 
